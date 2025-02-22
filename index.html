@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FotoAR</title>
+    <title>TheFotoAR</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -87,6 +87,44 @@
         </div>
     </div>
 
+    <!-- Our Partners -->
+    <div id="partners" class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center py-4">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Committed To Delivering <span class="text-blue-600"> Excellence </span>
+                </h2>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="mt-10 flex justify-center">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper py-4">
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/Tesla_Motors.svg.png" class="h-16 mx-auto" alt="Partner 1">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/McDonalds_Logo.png" class="h-16 mx-auto" alt="Partner 2">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/google.png" class="h-16 mx-auto" alt="Partner 3">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/Tesla_Motors.svg.png" class="h-16 mx-auto" alt="Partner 4">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/google.png" class="h-16 mx-auto" alt="Partner 5">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-center">
+                            <img src="./assets/images/images.jpg" class="h-16 mx-auto" alt="Partner 6">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Features Section -->
     <div id="features" class="py-12 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -150,6 +188,68 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Guide Section -->
+    <div id="guid" class="py-12 bg-white">
+        <div class="Container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center">
+                Bring Your Photos to Life with <span class="text-blue-600 font-bold"> TheFotoAR!</span>
+            </h2>
+
+            <p class="text-gray-500 text-center italic text-sm md:text-base mt-2">
+                Just 2 steps. No need to download the application
+            </p>
+
+            <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-6">
+                <!-- Step 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center w-full md:w-1/3 relative">
+                    <div
+                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-md">
+                        <span class="text-blue-600 font-bold text-3xl">1</span>
+                    </div>
+                    <p class="text-gray-700 mt-6">Scan the QR-code or follow the
+                        <a href="#" class="text-blue-600 underline">link</a>
+                    </p>
+                    <img src="./assets/images/qr.svg" alt="QR Code" class="mt-4 mx-auto w-28 h-28">
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center w-full md:w-1/3 relative">
+                    <div
+                        class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-white px-4 py-2 rounded-full shadow-md">
+                        <span class="text-blue-600 font-bold text-3xl">2</span>
+                    </div>
+                    <p class="text-gray-700 mt-6">Point your phone at the photo and it will come to life</p>
+                </div>
+
+                <!-- Photo -->
+                <div class="w-full md:w-1/3">
+                    <img src="./assets/images/pearl-1400-1024x1024.jpg" alt="Animated Photo"
+                        class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Free Trial Section -->
+    <div id="trial" class="bg-gray-900 text-white py-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+            <!-- Text Section -->
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold">Get 10 Photos Free</h2>
+                <p class="text-gray-400">Start your free trial now</p>
+            </div>
+
+            <!-- Button -->
+            <div class="mt-6 md:mt-0">
+                <a href="#"
+                    class="relative inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
+                    Start for FREE
+                </a>
+                <p class="text-sm text-gray-400 mt-2 text-center md:text-left">1 Month FREE. No credit card required</p>
             </div>
         </div>
     </div>
@@ -300,44 +400,6 @@
                     <p class="text-gray-600 italic">"Highly recommend this to anyone looking to bring their pictures to
                         life!"</p>
                     <h3 class="text-gray-900 font-bold mt-4">- Mark Wilson</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Our Partners -->
-    <div id="partners" class="py-12 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                    Meet Our Partners 
-                </h2>
-            </div>
-
-            <!-- Carousel Container -->
-            <div class="mt-10 flex justify-center">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper py-4">
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/Tesla_Motors.svg.png" class="h-16 mx-auto" alt="Partner 1">
-                        </div>
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/McDonalds_Logo.png" class="h-16 mx-auto" alt="Partner 2">
-                        </div>
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/google.png" class="h-16 mx-auto" alt="Partner 3">
-                        </div>
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/Tesla_Motors.svg.png" class="h-16 mx-auto" alt="Partner 4">
-                        </div>
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/google.png" class="h-16 mx-auto" alt="Partner 5">
-                        </div>
-                        <div class="swiper-slide flex justify-center items-center">
-                            <img src="./assets/images/images.jpg" class="h-16 mx-auto" alt="Partner 6">
-                        </div>
-                        
-                    </div>
                 </div>
             </div>
         </div>
@@ -518,6 +580,49 @@
         </div>
     </div>
 
+    <!-- Blog Section -->
+    <div id="blog" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-900">Latest from Our <span class="text-blue-600"> Blog</span></h2>
+            <p class="text-gray-500 mt-4">Explore insights, updates, and stories from TheFotoAR</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+            <!-- Blog Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/blog1.jpeg" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">How AR is Transforming Photography</h3>
+                    <p class="text-gray-500 mt-2">Discover how Augmented Reality is revolutionizing the way we capture
+                        and relive memories.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/blog2.jpg" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">The Future of Digital Albums</h3>
+                    <p class="text-gray-500 mt-2">AR-powered albums bring your memories to life like never before. Learn
+                        what’s next!</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="./assets/images/blog3.webp" alt="Blog Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-semibold text-gray-800">Why Your Business Needs AR Marketing</h3>
+                    <p class="text-gray-500 mt-2">AR isn’t just for fun—it’s a game-changer in marketing. Here’s how you
+                        can leverage it.</p>
+                    <a href="#" class="inline-block mt-4 text-blue-600 font-semibold hover:underline">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-gray-300 py-12">
         <!-- Newsletter Section -->
@@ -592,17 +697,19 @@
     <!-- Swiper Initialization -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 5, 
+            slidesPerView: 5,
             spaceBetween: 50,
             loop: true,
             centeredSlides: true,
             autoplay: {
-                delay: 2000,  
+                delay: 0,
                 disableOnInteraction: false,
             },
+            speed: 4000,
             breakpoints: {
-                640: { slidesPerView: 2 },
-                1024: { slidesPerView: 5 }
+                768: { slidesPerView: 3 },
+                480: { slidesPerView: 2 },
+                320: { slidesPerView: 1 },
             }
         });
     </script>
@@ -610,3 +717,5 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </body>
+
+</html>
