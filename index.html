@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body class="min-h-screen bg-white">
@@ -40,7 +41,7 @@
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="absolute top-16 left-0 w-full bg-white shadow-md opacity-0 scale-95 transform transition-all duration-300 ease-in-out hidden">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#features" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Features</a>
                 <a href="#pricing" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Pricing</a>
@@ -690,10 +691,11 @@
 
 
 
-
+    <!-- ******** Scripts ******** -->
     <!-- Swiper.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- Mobile Navigation Icon script -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <!-- Swiper Initialization -->
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -712,10 +714,27 @@
                 320: { slidesPerView: 1 },
             }
         });
+        // Feather Icons
+        feather.replace();
+        // Toggle Mobile Menu
+        document.getElementById("mobile-menu-button").addEventListener("click", function () {
+        var menu = document.getElementById("mobile-menu");
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            setTimeout(() => {
+                menu.classList.remove("opacity-0", "scale-95");
+                menu.classList.add("opacity-100", "scale-100");
+            }, 10);
+        } else {
+            menu.classList.remove("opacity-100", "scale-100");
+            menu.classList.add("opacity-0", "scale-95");
+            setTimeout(() => {
+                menu.classList.add("hidden");
+            }, 300);
+        }
+    });
     </script>
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </body>
 
 </html>
